@@ -1,0 +1,63 @@
+/* Mobile && Tablet */
+@media (max-width: 1023px){
+    :root{
+        --header-height: 70px;
+        --header-nav-height: 0px;
+    }
+    .hide-on-mobile-table{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .header__cart-list::before{
+        display: none;
+    }
+    .header__cart-list {
+        width: 100%;
+        position: fixed;
+        top: var(--header-height);
+        right: 0px;  
+    }
+    .app_container {
+        background-color: #f5f5f5;
+        padding-top: 35px;
+        margin-top: var(--header-height);
+    }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__logo-tablet{
+        display: block;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+    .nav__bars-btn{
+        display: block;
+    }
+    .container{
+        margin-top: 130px;
+        padding-right: 8px;
+        padding-left: 5px;
+    }
+    Footer{
+        padding: 12px 10px 10px;
+    }
+    .modal{
+        width: 100%;
+        line-height: 20px;
+    }
+}
